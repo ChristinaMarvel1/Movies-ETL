@@ -56,7 +56,7 @@ Download the ETL_Deliverable2_starter_code.ipynb file, add it to your Movies-ETL
 
 After you confirm that the wiki_movies_df DataFrame is correct, save the ETL_clean_wiki_movies.ipynb file in your Movies-ETL GitHub folder.
 
-##Deliverable 3: Extract and Transform the Kaggle Data
+## Deliverable 3: Extract and Transform the Kaggle Data
 
 Download the ETL_Deliverable3_starter_code.ipynb file, add it to your Movies-ETL GitHub folder, and rename the file ETL_clean_kaggle_data.ipynb. Follow the instructions below to refactor the code from this module as indicated by the numbered comments in the starter code file.
 
@@ -78,12 +78,13 @@ In Step 2, below the code that cleans the running time column in the wiki_movies
 15. In Step 15, check that your movies_df DataFrame looks like this image:
 17. After you confirm that all three DataFrames are correct, save the ETL_clean_kaggle_data.ipynb file in your Movies-ETL GitHub folder.
 
-##Deliverable 4: Create the Movie Database
+## Deliverable 4: Create the Movie Database
 Make a copy of the ETL_clean_kaggle_data.ipynb file in the Movies-ETL GitHub, and rename the file ETL_create_database.ipynb. Follow the instructions below to add the movies_df DataFrame and MovieLens rating CSV data to a SQL database.
 
 1. In the first cell, uncomment the # from config import db_password so this code is working.
 2. Remove the return statement, return wiki_movies_df, movies_with_ratings_df, movies_df.
 3. After Step 9, Transform and merge the ratings DataFrame, add the code to create the connection to the PostgreSQL database, then add the movies_df DataFrame to a SQL database.
+
 Hint: Use 'replace' for the if_exists parameter so that the movies_df DataFrame data won't be added to the table again.
 
 4. Before reading in the MovieLens rating CSV data, drop the ratings table in pgAdmin.
